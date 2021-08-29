@@ -110,14 +110,14 @@ Service Files
 
 Commands to know
 ```````````````````
-* sudo systemctl start file.service
-* sudo systemctl restart file.service
-* sudo systemctl stop file.service
+* sudo systemctl start otree.service
+* sudo systemctl restart otree.service
+* sudo systemctl stop otree.service
 
 If you would like to see the output of the service file run the command below:
 
 .. note::
-    I like the perform the command below in Tmux to show the output is saved even when I logout of the server.
+    I like to perform the command below in Tmux to show the output is saved even when I logout of the server.
 
 .. code-block:: bash
 

@@ -316,16 +316,16 @@ so you don’t make changes during someone else’s experiment.</p>
 <div class="section" id="commands-to-know">
 <h4>Commands to know<a class="headerlink" href="#commands-to-know" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
-<li><p>sudo systemctl start file.service</p></li>
-<li><p>sudo systemctl restart file.service</p></li>
-<li><p>sudo systemctl stop file.service</p></li>
+<li><p>sudo systemctl start otree.service</p></li>
+<li><p>sudo systemctl restart otree.service</p></li>
+<li><p>sudo systemctl stop otree.service</p></li>
 </ul>
 <p>If you would like to see the output of the service file run the command below:</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>I like the perform the command below in Tmux to show the output is saved even when I logout of the server.</p>
+<p>I like to perform the command below in Tmux to show the output is saved even when I logout of the server.</p>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo journalctl -f -u filename.service
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo journalctl -f -u otree.service
 </pre></div>
 </div>
 <p><a class="reference external" href="https://drive.google.com/file/d/13N89xUwcoNPd65XAkDuOG_-gQejAeIeu/view?usp=sharing">Example service file</a></p>
