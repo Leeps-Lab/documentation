@@ -121,7 +121,7 @@ If you would like to see the output of the service file run the command below:
 
 .. code-block:: bash
 
-    sudo journalctl -f -u filename.service
+    sudo journalctl -f -u otree.service
 
 `Example service file <https://drive.google.com/file/d/13N89xUwcoNPd65XAkDuOG_-gQejAeIeu/view?usp=sharing>`_
 
