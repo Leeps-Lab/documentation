@@ -5,7 +5,7 @@ Welcome to LEEPS Lab's documentation!
 ===================================================
 
 .. toctree::
-   :maxdepth: 2
    :caption: Contents:
 
    server
+   recruiting

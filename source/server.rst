@@ -1,6 +1,6 @@
 .. _server:
 
-Server documentation
+Server Documentation
 =====================
 
 .. warning::
@@ -136,7 +136,9 @@ Steps
 `````
 * Git pull your project in the oTree folder and add it to settings.py
 * Make sure you export the database URL before running the command below
-   * export DATABASE_URL=postgres://postgres:password@localhost/django_db 
+   * .. code-block:: bash 
+
+       export DATABASE_URL=postgres://postgres:password@localhost/django_db 
    * You can find the specific DATABASE_URL inside one of the service files in /home/leeps
 * Run ‘otree resetdb’ to add new database columns
 * Run ‘otree collectstatic’ to cache static files
