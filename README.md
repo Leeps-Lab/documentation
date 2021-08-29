@@ -1,6 +1,9 @@
 # Documentation for LEEPS Lab
 ReadTheDocs Repository for LEEPS Documentation
 
+
+URL: https://leepslab.readthedocs.io/en/latest/
+
 Getting Started
 - git clone https://github.com/LeepsLab/documentation.git
 - pip install sphinx
