@@ -90,7 +90,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="server.html">Server Documentation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Subject Recruitment Documentation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#finding-people-to-email">Finding people to email:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#finding-people-to-email">Finding people to email</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#removing-duplicates-already-in-the-system">Removing duplicates already in the system:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#email-template">Email Template</a></li>
 </ul>
@@ -169,7 +169,7 @@
 <p>You need a faculty account to do this. Try asking a Professor.</p>
 </div>
 <div class="section" id="finding-people-to-email">
-<h2>Finding people to email:<a class="headerlink" href="#finding-people-to-email" title="Permalink to this headline">¶</a></h2>
+<h2>Finding people to email<a class="headerlink" href="#finding-people-to-email" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Check <a class="reference external" href="https://pisa.ucsc.edu/class_search/">pisa.ucsc.edu/class_search</a></p></li>
 <li><p>Select the current quarter, and search for courses with the largest enrollment count.</p></li>
@@ -184,11 +184,11 @@
 <li><p>We want to exclude anyone already in the ORSEE system</p></li>
 <li><p>Go to <a class="reference external" href="https://econlab.ucsc.edu/admin">https://econlab.ucsc.edu/admin</a> &gt;&gt; Participants’ Overview &gt;&gt; Edit all participants &gt;&gt; Seach and show (without any conditions)</p></li>
 <li><p>Copy-paste everything into a CSV and delete all columns that aren’t emails</p></li>
-<li><p>This <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Qm6cxbRjshR-RqHSN4PROeqK2xzNZ77ylPbl58xw6fA/edit?usp=sharing">CSV</a> file contains people that have been emailed before and people that are already in the database.</p></li>
+<li><p>Follow this <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Qm6cxbRjshR-RqHSN4PROeqK2xzNZ77ylPbl58xw6fA/edit?usp=sharing">CSV</a> pattern.</p></li>
 <li><p>After you have pasted the emails into a CSV, replace the emails in the database column in the CSV above</p></li>
-<li><p>Once done, use this <a class="reference external" href="https://drive.google.com/file/d/1O6406MDR_S9poAL7OtRS3ytQQMO-pYjI/view?usp=sharing">file</a> to delete duplicates. This will generate a new CSV of people that haven’t been recruited before. (Make sure to execute the python script in the same directory as the other CSVs and change the file names in the CSV)</p></li>
+<li><p>Once done, use this <a class="reference download internal" download="" href="_downloads/5197b0190227d2a9f9e37759ba80f017/removeDuplicateEmails.py"><code class="xref download docutils literal notranslate"><span class="pre">file</span></code></a> to delete duplicates. This will generate a new CSV of people that haven’t been recruited before. (Make sure to execute the python script in the same directory as the other CSVs and change the file names in the CSV)</p></li>
 </ul>
-<p>Compose a new email and paste it into BCC.</p>
+<p>Compose a new email and paste it into BCC so the receivers can’t see the other people being emailed.</p>
 </div>
 <div class="section" id="email-template">
 <h2>Email Template<a class="headerlink" href="#email-template" title="Permalink to this headline">¶</a></h2>
