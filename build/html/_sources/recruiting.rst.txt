@@ -13,13 +13,15 @@ Finding people to email:
 * Protip: I recommend CSE3, LING80K, CSE12, CSE16, ECON1, ECON2, or any lower division classes (They typically have a high enrollment count).
 * In `https://my.ucsc.edu <https://my.ucsc.edu>`_, faculty center, class roster search, find these classes, and copy their email lists. 
 * Create a new spreadsheet, and copy-paste all roster results without a header
-* Remove emails already in the system. 
+
+Removing duplicates already in the system:
+------------------------------------------
 * We want to exclude anyone already in the ORSEE system 
 * Go to `https://econlab.ucsc.edu/admin <https://econlab.ucsc.edu/admin>`_ >> Participants' Overview >> Edit all participants >> Seach and show (without any conditions)
 * Copy-paste everything into a CSV and delete all columns that aren’t emails
-* This CSV file contains people that have been emailed before and people that are already in the database. 
+* This `CSV <https://docs.google.com/spreadsheets/d/1Qm6cxbRjshR-RqHSN4PROeqK2xzNZ77ylPbl58xw6fA/edit?usp=sharing>`_ file contains people that have been emailed before and people that are already in the database. 
 * After you have pasted the emails into a CSV, replace the emails in the database column in the CSV above
-* Once done, use this file to delete duplicates. This will generate a new CSV of people that haven’t been recruited before. (Make sure to execute the python script in the same directory as the other CSVs and change the file names in the CSV)
+* Once done, use this `file <https://drive.google.com/file/d/1O6406MDR_S9poAL7OtRS3ytQQMO-pYjI/view?usp=sharing>`_ to delete duplicates. This will generate a new CSV of people that haven’t been recruited before. (Make sure to execute the python script in the same directory as the other CSVs and change the file names in the CSV)
 
 Compose a new email and paste it into BCC.
 

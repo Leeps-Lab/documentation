@@ -91,6 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="server.html">Server Documentation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Subject Recruitment Documentation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#finding-people-to-email">Finding people to email:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#removing-duplicates-already-in-the-system">Removing duplicates already in the system:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#email-template">Email Template</a></li>
 </ul>
 </li>
@@ -175,13 +176,17 @@
 <li><p>Protip: I recommend CSE3, LING80K, CSE12, CSE16, ECON1, ECON2, or any lower division classes (They typically have a high enrollment count).</p></li>
 <li><p>In <a class="reference external" href="https://my.ucsc.edu">https://my.ucsc.edu</a>, faculty center, class roster search, find these classes, and copy their email lists.</p></li>
 <li><p>Create a new spreadsheet, and copy-paste all roster results without a header</p></li>
-<li><p>Remove emails already in the system.</p></li>
+</ul>
+</div>
+<div class="section" id="removing-duplicates-already-in-the-system">
+<h2>Removing duplicates already in the system:<a class="headerlink" href="#removing-duplicates-already-in-the-system" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
 <li><p>We want to exclude anyone already in the ORSEE system</p></li>
 <li><p>Go to <a class="reference external" href="https://econlab.ucsc.edu/admin">https://econlab.ucsc.edu/admin</a> &gt;&gt; Participants’ Overview &gt;&gt; Edit all participants &gt;&gt; Seach and show (without any conditions)</p></li>
 <li><p>Copy-paste everything into a CSV and delete all columns that aren’t emails</p></li>
-<li><p>This CSV file contains people that have been emailed before and people that are already in the database.</p></li>
+<li><p>This <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Qm6cxbRjshR-RqHSN4PROeqK2xzNZ77ylPbl58xw6fA/edit?usp=sharing">CSV</a> file contains people that have been emailed before and people that are already in the database.</p></li>
 <li><p>After you have pasted the emails into a CSV, replace the emails in the database column in the CSV above</p></li>
-<li><p>Once done, use this file to delete duplicates. This will generate a new CSV of people that haven’t been recruited before. (Make sure to execute the python script in the same directory as the other CSVs and change the file names in the CSV)</p></li>
+<li><p>Once done, use this <a class="reference external" href="https://drive.google.com/file/d/1O6406MDR_S9poAL7OtRS3ytQQMO-pYjI/view?usp=sharing">file</a> to delete duplicates. This will generate a new CSV of people that haven’t been recruited before. (Make sure to execute the python script in the same directory as the other CSVs and change the file names in the CSV)</p></li>
 </ul>
 <p>Compose a new email and paste it into BCC.</p>
 </div>
