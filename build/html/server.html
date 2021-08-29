@@ -1,0 +1,409 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Server documentation &mdash; LEEPS Lab 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to LEEPS Lab’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> LEEPS Lab
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Server documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#experimental-servers">Experimental Servers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#orsee">ORSEE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#main-website">Main Website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#server-maintenance-contact-information">Server Maintenance Contact Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reverse-proxy-service">Reverse Proxy Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#experimental-server-specifics">Experimental Server Specifics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#required-services">Required services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#important-commands">Important Commands</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#service-files">Service Files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#commands-to-know">Commands to know</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-experiments">Adding experiments</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#steps">Steps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">LEEPS Lab</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Server documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/server.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="server-documentation">
+<span id="server"></span><h1>Server documentation<a class="headerlink" href="#server-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Before making any changes to the experimental servers
+make sure you check out the experiment <a class="reference external" href="https://econlab.ucsc.edu/public/show_calendar.php/">calendar</a>
+so you don’t make changes during someone else’s experiment.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All servers use CentOS, so you use ‘yum’ to install packages.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Example files are hosted under the <a class="reference external" href="mailto:leeps&#37;&#52;&#48;ucsc&#46;edu">leeps<span>&#64;</span>ucsc<span>&#46;</span>edu</a> Google Drive account</p>
+</div>
+<div class="section" id="experimental-servers">
+<h2>Experimental Servers<a class="headerlink" href="#experimental-servers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>econ-leeps-3.ucsc.edu - Runs oTree 3</p></li>
+<li><p>econ-leeps-4.ucsc.edu - Runs oTree 3</p></li>
+<li><p>econ-leeps-5.ucsc.edu - Runs oTree 5</p></li>
+</ul>
+</div>
+<div class="section" id="orsee">
+<h2>ORSEE<a class="headerlink" href="#orsee" title="Permalink to this headline">¶</a></h2>
+<p>This stands for Online Recruitment System for Economic Experiments.</p>
+<p>This is the website that is used to schedule experiments and invite subjects.</p>
+<p><a class="reference external" href="http://www.orsee.org/web/">ORSEE Documentation</a></p>
+<p><a class="reference external" href="https://econlab.ucsc.edu/admin/">ORSEE Admin Page</a></p>
+</div>
+<div class="section" id="main-website">
+<h2>Main Website<a class="headerlink" href="#main-website" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://leeps.ucsc.edu/home/">leeps.ucsc.edu</a></p>
+<p><a class="reference external" href="https://leeps.ucsc.edu/admin/">Main Website Admin Page</a></p>
+</div>
+<div class="section" id="server-maintenance-contact-information">
+<h2>Server Maintenance Contact Information<a class="headerlink" href="#server-maintenance-contact-information" title="Permalink to this headline">¶</a></h2>
+<p>Name: Doug Niven</p>
+<p>Email: <a class="reference external" href="mailto:dniven&#37;&#52;&#48;ucsc&#46;edu">dniven<span>&#64;</span>ucsc<span>&#46;</span>edu</a></p>
+<p>This is the person that will grant us new servers and SSL certificates.</p>
+<p>If Doug is no longer available, contact UCSC ITS directly.</p>
+</div>
+<div class="section" id="reverse-proxy-service">
+<h2>Reverse Proxy Service<a class="headerlink" href="#reverse-proxy-service" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to be the root user to edit the Nginx configuration. You can do this by running ‘sudo -su root’.</p>
+</div>
+<p>Nginx is used for all the experimental servers and the Main Website. I’m not sure about ORSEE.</p>
+<p>Nginx is also being used for SSL.</p>
+<p>SSL certificates found in /etc/ssl</p>
+<p>Nginx config found in /etc/nginx/conf.d</p>
+<p><a class="reference external" href="https://drive.google.com/file/d/17QIHpkjuK30eKnswYESwlwoccxd_T70X/view?usp=sharing">Nginx Configuration Example</a></p>
+</div>
+<div class="section" id="experimental-server-specifics">
+<h2>Experimental Server Specifics<a class="headerlink" href="#experimental-server-specifics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="required-services">
+<h3>Required services<a class="headerlink" href="#required-services" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><dl class="simple">
+<dt>PostgreSQL</dt><dd><ul>
+<li><p>Make sure you pip3 install psycopg2-binary</p></li>
+<li><p><a class="reference external" href="https://www.hostinger.com/tutorials/how-to-install-postgresql-on-centos-7/">PostgreSQL Installation Tutorial</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Redis</dt><dd><ul>
+<li><p><a class="reference external" href="https://linuxize.com/post/how-to-install-and-configure-redis-on-centos-7/">Redis Installation Tutorial</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Git</dt><dd><ul>
+<li><p>sudo yum install git</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Nginx</dt><dd><ul>
+<li><p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-7">Nginx Installation Tutorial</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Python 3.7</dt><dd><ul>
+<li><p><a class="reference external" href="https://tecadmin.net/install-python-3-7-on-centos/">Python 3.7 Installation Tutorial</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Python virtual environment</dt><dd><ul>
+<li><p><a class="reference external" href="https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/">Python virtual environment Tutorial</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Tmux</dt><dd><ul>
+<li><p>sudo yum install tmux</p></li>
+<li><p><a class="reference external" href="https://tmuxcheatsheet.com/">Refer to this to understand tmux</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="important-commands">
+<h3>Important Commands<a class="headerlink" href="#important-commands" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Tmux allows you to continuously run services even when logging out</p>
+</div>
+<ul class="simple">
+<li><p>tmux - Creates new tmux session</p></li>
+<li><p>tmux a - Attaches to last tmux session</p></li>
+<li><p>Ctrl + B + D - Detaches from current tmux session</p></li>
+<li><p>Ctrl + B + % - Creates new tmux pane</p></li>
+<li><p>Ctrl + B + (Arrow Key) - Move between tmux panes</p></li>
+<li><p>Ctrl + B + [ - Allows you to scroll in a tmux window</p></li>
+</ul>
+</div>
+<div class="section" id="service-files">
+<h3>Service Files<a class="headerlink" href="#service-files" title="Permalink to this headline">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Service files allow you to run processes in the background.</p>
+</div>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.shubhamdipt.com/blog/how-to-create-a-systemd-service-in-linux/">Service file tutorial</a></p></li>
+</ul>
+<div class="section" id="commands-to-know">
+<h4>Commands to know<a class="headerlink" href="#commands-to-know" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>sudo systemctl start file.service</p></li>
+<li><p>sudo systemctl restart file.service</p></li>
+<li><p>sudo systemctl stop file.service</p></li>
+</ul>
+<p>If you would like to see the output of the service file run the command below:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I like the perform the command below in Tmux to show the output is saved even when I logout of the server.</p>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo journalctl -f -u filename.service
+</pre></div>
+</div>
+<p><a class="reference external" href="https://drive.google.com/file/d/13N89xUwcoNPd65XAkDuOG_-gQejAeIeu/view?usp=sharing">Example service file</a></p>
+</div>
+</div>
+<div class="section" id="adding-experiments">
+<h3>Adding experiments<a class="headerlink" href="#adding-experiments" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Before doing this, ensure that all the data from other experiments have been downloaded.
+Make sure your project only contains your app, not the entire oTree configuration.</p>
+</div>
+<div class="section" id="steps">
+<h4>Steps<a class="headerlink" href="#steps" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Git pull your project in the oTree folder and add it to settings.py</p></li>
+<li><dl class="simple">
+<dt>Make sure you export the database URL before running the command below</dt><dd><ul>
+<li><p>export DATABASE_URL=postgres://postgres:password&#64;localhost/django_db</p></li>
+<li><p>You can find the specific DATABASE_URL inside one of the service files in /home/leeps</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Run ‘otree resetdb’ to add new database columns</p></li>
+<li><p>Run ‘otree collectstatic’ to cache static files</p></li>
+<li><p>If the experiment doesn’t show up, run ‘sudo systemctl restart otree.service’</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to LEEPS Lab’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Leeps Lab.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
