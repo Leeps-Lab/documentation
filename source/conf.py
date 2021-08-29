@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'LEEPS Lab Documentation'
+project = 'LEEPS Lab'
 copyright = '2021, Leeps Lab'
 author = 'Leeps Lab'
 
