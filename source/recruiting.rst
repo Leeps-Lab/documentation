@@ -6,7 +6,7 @@ Subject Recruitment Documentation
 .. note::
     You need a faculty account to do this. Try asking a Professor.
 
-Finding people to email: 
+Finding people to email
 --------------------------
 * Check `pisa.ucsc.edu/class_search <https://pisa.ucsc.edu/class_search/>`_
 * Select the current quarter, and search for courses with the largest enrollment count.
@@ -23,7 +23,7 @@ Removing duplicates already in the system:
 * After you have pasted the emails into a CSV, replace the emails in the database column in the CSV above
 * Once done, use this `file <https://drive.google.com/file/d/1O6406MDR_S9poAL7OtRS3ytQQMO-pYjI/view?usp=sharing>`_ to delete duplicates. This will generate a new CSV of people that haven’t been recruited before. (Make sure to execute the python script in the same directory as the other CSVs and change the file names in the CSV)
 
-Compose a new email and paste it into BCC.
+Compose a new email and paste it into BCC so the receivers can't see the other people being emailed.
 
 Email Template
 --------------
@@ -57,12 +57,3 @@ Email Template
 
 
     Questions comments and concerns, please email leeps@ucsc.edu
-
-
-
-
-
-
-
-
-
